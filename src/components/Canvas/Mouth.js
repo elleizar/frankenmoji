@@ -8,14 +8,6 @@ import kiss from '../../images/mouths/kiss.png';
 const mouths = [biggrintongue, drool, frown, kiss];
 
 export class Mouth extends Component {
-  constructor(props) {
-    super(props)
-     this.state = {
-       name : "",
-       url : "",
-    }
-  }
-  
    render() {
     return (
       <div className="mouth">

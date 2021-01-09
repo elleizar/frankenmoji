@@ -12,14 +12,6 @@ import heart from '../../images/eyes/eyes_heart.png';
 const eyes = [angry, closed, crossed, crying, expressionless, flushed, heart];
 
 export class Eyes extends Component {
-  constructor(props) {
-    super(props)
-    this.state = {
-      name : "",
-      url : "",
-    }
-  }
-
   render() {
     return (
       <div className="eye">

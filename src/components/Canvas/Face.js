@@ -7,14 +7,6 @@ import fearful from '../../images/faces/fearful_face.png';
 const faces = [plain, blush, angry, fearful];
   
 export class Face extends Component {
-  constructor(props) {
-    super(props)
-     this.state = {
-       name : "",
-       url : "",
-    }
-  }
-  
    render() {
     return (
       <div className="face">

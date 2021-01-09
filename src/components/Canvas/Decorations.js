@@ -6,14 +6,6 @@ import hearts from '../../images/decorations/hearts.png';
 const decorations = [cowboy, halo, hearts];
 
 export class Decorations extends Component {
-  constructor(props) {
-    super(props)
-     this.state = {
-       name : "",
-       url : "",
-    }
-  }
-  
    render() {
     return (
       <div className="decorations">
