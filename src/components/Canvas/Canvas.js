@@ -17,7 +17,4 @@ export class Canvas extends Component {
       </div>
     )
   }
-
-
-
 }
