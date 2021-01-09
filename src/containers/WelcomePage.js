@@ -5,7 +5,7 @@ import Button from 'react-bootstrap/Button'
 
 export class WelcomePage extends Component {
   buttonClicked () {
-    window.location="editor"
+    window.location="generator"
   }
 
   render() {

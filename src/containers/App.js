@@ -1,7 +1,6 @@
 import '../css/App.css';
-// import { DefaultReact } from '../components/DefaultReact';
 import { WelcomePage } from './WelcomePage';
-import { EditorPage } from './EditorPage';
+import { GeneratorPage } from './GeneratorPage';
 import { Component } from 'react';
 import { Route, Switch, BrowserRouter as Router } from 'react-router-dom'
 
@@ -16,8 +15,8 @@ class App extends Component{
           <Route path="/welcome">
             <WelcomePage />
           </Route>
-          <Route path="/editor">
-            <EditorPage />
+          <Route path="/generator">
+            <GeneratorPage />
           </Route>
         </Switch>
       </Router>

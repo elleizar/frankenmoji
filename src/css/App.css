@@ -31,8 +31,8 @@
   }
 }
 
-/* Editor page */
-.EditorPage {
+/* Generator page */
+.GeneratorPage {
   background-color: white;
   min-height: 100vh;
   display: flex;
