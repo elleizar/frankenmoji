@@ -2,4 +2,28 @@
     background-color: white;
     width: 500px;
     height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.eye, .mouth, .face, .decorations {
+    position: absolute;
+}
+
+.eye {
+    z-index: 1;
+}
+
+.mouth {
+    z-index: 1;
+}
+
+.face {
+    z-index: 0;
+}
+
+.decorations {
+    z-index: 2;
 }
