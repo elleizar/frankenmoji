@@ -1,27 +1,28 @@
 
 import { Component } from "react";
+import biggrintongue from '../../images/mouths/biggrintongue.png';
+import drool from '../../images/mouths/drool.png';
+import frown from '../../images/mouths/frown.png';
+import kiss from '../../images/mouths/kiss.png';
+
+const mouths = [biggrintongue, drool, frown, kiss];
 
 export class Mouth extends Component {
-  render() {
-    return (
-      <div>Mouth</div>
-    )
+  constructor(props) {
+    super(props)
+     this.state = {
+       name : "",
+       url : "",
+    }
   }
-}
-
-// var mouths = [];
-
-// function Mouth(name, url) {
-//     this.name = name;
-//     this.url = url;
-// }
-
-// mouths.push(new Mouth("biggrintongue", "../../images/mouths/biggrintongue.png"));
-// mouths.push(new Mouth("drool", "../../images/mouths/drool.png"));
-// mouths.push(new Mouth("frown", "../../images/mouths/frown.png"));
-// mouths.push(new Mouth("kiss", "../../images/mouths/kiss.png"));
-// mouths.push(new Mouth("kissheart", "../../images/mouths/kissheart.png"));
-// mouths.push(new Mouth("moneytongue", "../../images/mouths/moneytongue.png"));
-// mouths.push(new Mouth("mouthstraighttongueangle", "../../images/mouths/mouthstraighttongueangle.png"));
-// mouths.push(new Mouth("neutral", "../../images/mouths/neutral.png"));
-// mouths.push(new Mouth("slightersmile", "../../images/mouths/slightersmile.png"));
+  
+   render() {
+    return (
+      <div className="mouth">
+           <img src={mouths[0]}/>
+       </div>
+       // <Button
+      //   onClick=dis
+     )
+   }
+ }
