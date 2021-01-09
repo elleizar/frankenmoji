@@ -7,8 +7,11 @@ import kiss from '../../images/mouths/kiss.png';
 import moneytongue from '../../images/mouths/moneytongue.png';
 
 const mouths = [moneytongue, biggrintongue, drool, frown, kiss];
+<<<<<<< Updated upstream
 
 var index = 0;
+=======
+>>>>>>> Stashed changes
 
 export class Mouth extends Component {
    render() {

@@ -17,7 +17,11 @@ export class Eyes extends Component {
   render() {
     return (
       <div className="eye">
+<<<<<<< Updated upstream
           <img src={eyes[index]} alt=""/>
+=======
+          <img src={eyes[1]} alt=""/>
+>>>>>>> Stashed changes
       </div>
     )
   }
