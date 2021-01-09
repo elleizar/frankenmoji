@@ -9,7 +9,7 @@ export class Decorations extends Component {
    render() {
     return (
       <div className="decorations">
-           <img src={decorations[0]}/>
+           <img src={decorations[0]} alt=""/>
        </div>
        // <Button
       //   onClick=dis

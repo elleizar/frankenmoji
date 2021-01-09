@@ -11,7 +11,7 @@ export class Mouth extends Component {
    render() {
     return (
       <div className="mouth">
-           <img src={mouths[0]}/>
+           <img src={mouths[0]} alt=""/>
        </div>
        // <Button
       //   onClick=dis

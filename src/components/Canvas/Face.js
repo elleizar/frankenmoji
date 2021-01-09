@@ -10,7 +10,7 @@ export class Face extends Component {
    render() {
     return (
       <div className="face">
-           <img src={faces[0]}/>
+           <img src={faces[0]} alt=""/>
        </div>
        // <Button
       //   onClick=dis
