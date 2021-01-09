@@ -14,14 +14,12 @@ const eyes = [angry, closed, crossed, crying, expressionless, flushed, heart];
 var index = 0;
 
 export class Eyes extends Component {
+
   render() {
+    console.log("index eye: " + index)
     return (
       <div className="eye">
-<<<<<<< Updated upstream
           <img src={eyes[index]} alt=""/>
-=======
-          <img src={eyes[1]} alt=""/>
->>>>>>> Stashed changes
       </div>
     )
   }
@@ -29,8 +27,9 @@ export class Eyes extends Component {
 
 const eyesChange = function() {
     console.log("before: " + index)
-    index = (index + 1) % (eyes.length)
+    index = (index + 1) % (eyes.length);
     console.log(" after: " + index)
+    return index;
    }
   
 export {eyesChange};
