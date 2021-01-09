@@ -1,6 +1,7 @@
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
 import { Canvas } from "../components/Canvas/Canvas"
+import { Tools } from "../components/Canvas/Tools"
 
 export class GeneratorPage extends Component {
   buttonClicked () {
@@ -16,6 +17,7 @@ export class GeneratorPage extends Component {
         <br/>
         <br/>
         <Canvas/>
+        <Tools/>
         <br/>
         <br/>
         <Button 
