@@ -11,15 +11,22 @@ import heart from '../../images/eyes/eyes_heart.png';
 
 const eyes = [angry, closed, crossed, crying, expressionless, flushed, heart];
 
+var index = 0;
+
 export class Eyes extends Component {
   render() {
     return (
       <div className="eye">
-          <img src={eyes[0]} alt=""/>
+          <img src={eyes[index]} alt=""/>
       </div>
-      // <Button
-      //   onClick=dis
     )
   }
 }
 
+const eyesChange = function() {
+    console.log("before: " + index)
+    index = (index + 1) % (eyes.length)
+    console.log(" after: " + index)
+   }
+  
+export {eyesChange};

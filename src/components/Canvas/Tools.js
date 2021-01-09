@@ -2,6 +2,11 @@ import { Component } from "react";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types"
 
+import { Eyes } from "./Eyes";
+import { Mouth } from "./Mouth";
+import { faceChange } from "./Face";
+import { Decorations } from "./Decorations";
+
 export class Tools extends Component {
 
   eyeButton() {
@@ -29,7 +34,7 @@ export class Tools extends Component {
 
         <Button
           className="face-button"
-          onClick={() => console.log("face button clicked")}
+          onClick={faceChange}
         >
           Face
         </Button>
@@ -37,6 +42,7 @@ export class Tools extends Component {
         <Button
           className="decorations-button"
           onClick={() => console.log("decoration button clicked")}
+
         >
           Decoration
         </Button>

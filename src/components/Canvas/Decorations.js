@@ -5,14 +5,22 @@ import hearts from '../../images/decorations/hearts.png';
 
 const decorations = [cowboy, halo, hearts];
 
+var index = 0;
+
 export class Decorations extends Component {
    render() {
     return (
       <div className="decorations">
-           <img src={decorations[0]} alt=""/>
+           <img src={decorations[index]} alt=""/>
        </div>
-       // <Button
-      //   onClick=dis
      )
    }
  }
+
+const decorationsChange = function() {
+  console.log("before: " + index)
+  index = (index + 1) % (decorations.length)
+  console.log(" after: " + index)
+ }
+
+ export {decorationsChange};
