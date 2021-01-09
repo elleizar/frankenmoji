@@ -20,7 +20,8 @@ export class WelcomePage extends Component {
         <br/>
         <Button 
           className="makeButton"
-          onClick={this.buttonClicked}>
+          onClick={this.buttonClicked}
+          variant="outline-primary">
             Make your emoji
         </Button>
       </div>

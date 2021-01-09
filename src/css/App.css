@@ -33,7 +33,7 @@
 
 /* Generator page */
 .GeneratorPage {
-  background-color: white;
+  background-color: green;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
