@@ -22,10 +22,9 @@ import wink2 from '../../images/eyes/eyes_wink2.png';
 import woozy from '../../images/eyes/eyes_woozy.png';
 import zany from '../../images/eyes/eyes_zany.png';
 import stars from '../../images/eyes/stars.png';
-import thinking from '../../images/eyes/thinking.png';
 import sunglasses from '../../images/eyes/eyes_sunglasses.png';
 
-const eyes = [angry, closed, crossed, crying, thinking, stars, expressionless, flushed, heart, money, pensive, sunglasses, plain, pleading, rolling, shut, smiling, smirking, weary, wink, wink2, woozy, zany];
+const eyes = [angry, closed, crossed, crying, stars, expressionless, flushed, heart, money, pensive, sunglasses, plain, pleading, rolling, shut, smiling, smirking, weary, wink, wink2, woozy, zany];
 
 var index = Math.floor(Math.random() * (eyes.length - 0));
 
