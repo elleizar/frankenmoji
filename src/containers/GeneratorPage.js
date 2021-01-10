@@ -5,22 +5,22 @@ import { Tools } from "../components/Canvas/Tools"
 
 export class GeneratorPage extends Component {
   buttonClicked () {
-    window.location="welcome"
+    window.location="/"
   }
 
   render() {
     return (
       <div className="GeneratorPage">
-        <header className="Generator-header">
-          Emoji Generator Page
-        </header>
-        <br/>
-        <br/>
+        <h4 className="Generator-inst">
+          Click on the buttons below to change your frankenmoji!
+        </h4>
         <Canvas/>
+        <br/>
         <Tools/>
         <br/>
         <br/>
         <Button 
+          className="backButton"
           onClick={this.buttonClicked}>
             Back
         </Button>

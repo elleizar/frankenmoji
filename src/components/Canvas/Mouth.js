@@ -34,7 +34,7 @@ import lteeth from '../../images/mouths/lipsteeth.png';
 
 const mouths = [moneytongue, biggrintongue, drool, frown, kiss, kissheart, msta, neutral, slightersmile, slightestsmile, slightsmile, smileneutral, smilewt, smirk, snezz, tangle, tvertical, ugh, yikes, nsd, bfrown, cfrown, ffrown, stongue, www, zwt, zip, llips, slips, lteeth ];
 
-var index = 0;
+var index = Math.floor(Math.random() * (mouths.length - 0));
 
 export class Mouth extends Component {
   constructor(props) {

@@ -1,6 +1,6 @@
 /* Welcome Page */
 .WelcomePage {
-  background-color: #282c34;
+  background-color: #495059;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -30,10 +30,22 @@
     transform: rotate(360deg);
   }
 }
+.makeButton {
+  width: 200px;
+  height: 80px;
+  font-size: 30px;
+  font-weight: bold;
+}
+.Welcome-quote {
+  font-family: "Monospace";
+  font-size: 15px;
+  width: 500px;
+}
+
 
 /* Generator page */
 .GeneratorPage {
-  background-color: green;
+  background-color: #c5eddc;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,4 +54,11 @@
   font-size: calc(10px + 2vmin);
   color: black;
   text-align: center;
+}
+
+.backButton {
+  width: 90px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
 }

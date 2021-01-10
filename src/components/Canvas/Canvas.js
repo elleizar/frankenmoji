@@ -9,7 +9,6 @@ export class Canvas extends Component {
   render() {
     return (
       <div className="Canvas">
-        <header>Canvas</header>
         <Decorations/>
         <Eyes/>
         <Mouth/>

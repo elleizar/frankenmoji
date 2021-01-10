@@ -16,30 +16,29 @@ export class Tools extends Component {
           className="eye-button"
           onClick={window.eyesChange}
         >
-          Eye
-        </Button>
+          Eyes
+        </Button>{" "}
 
         <Button
           className="mouth-button"
           onClick={window.mouthChange}
         >
           Mouth
-        </Button>
+        </Button>{" "}
 
         <Button
           className="face-button"
           onClick={window.faceChange}
         >
           Face
-        </Button>
+        </Button>{" "}
 
         <Button
           className="decorations-button"
-          // onClick={() => console.log("decoration button clicked")}
           onClick={window.decorationsChange}
         >
-          Decoration
-        </Button>
+          Accessories
+        </Button>{" "}
 
         <Button
           className="random-button"

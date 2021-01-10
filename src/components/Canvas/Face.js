@@ -8,7 +8,7 @@ import devil from '../../images/faces/devil.png';
 
 const faces = [plain, blush, angry, fearful, clown, devil];
 
-var index = 0;
+var index = Math.floor(Math.random() * (faces.length - 0));
   
 export class Face extends Component {
   constructor(props) {

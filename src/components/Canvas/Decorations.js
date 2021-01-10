@@ -14,7 +14,7 @@ import zzz from '../../images/decorations/zzz.png';
 
 const decorations = [cowboy, halo, hearts, hug, party, mask, shush, sweat, tear, thinking, yawn, zzz];
 
-var index = 0;
+var index = Math.floor(Math.random() * (decorations.length - 0));
 
 export class Decorations extends Component {
   constructor(props) {

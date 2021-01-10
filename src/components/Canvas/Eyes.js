@@ -27,7 +27,7 @@ import sunglasses from '../../images/eyes/eyes_sunglasses.png';
 
 const eyes = [angry, closed, crossed, crying, thinking, stars, expressionless, flushed, heart, money, pensive, sunglasses, plain, pleading, rolling, shut, smiling, smirking, weary, wink, wink2, woozy, zany];
 
-var index = 0;
+var index = Math.floor(Math.random() * (eyes.length - 0));
 
 export class Eyes extends Component {
   constructor(props) {
