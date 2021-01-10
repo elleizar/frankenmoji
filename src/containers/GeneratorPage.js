@@ -2,12 +2,9 @@ import { Component } from "react";
 import Button from "react-bootstrap/Button";
 import { Canvas } from "../components/Canvas/Canvas"
 import { Tools } from "../components/Canvas/Tools"
+import { Link } from 'react-router-dom'
 
 export class GeneratorPage extends Component {
-  buttonClicked () {
-    window.location="/"
-  }
-
   render() {
     return (
       <div className="GeneratorPage">
@@ -18,11 +15,12 @@ export class GeneratorPage extends Component {
         <br/>
         <Tools/>
         <br/>
-        <Button 
-          className="backButton"
-          onClick={this.buttonClicked}>
-            Back
-        </Button>
+        <Link to='/'>
+          <Button 
+            className="backButton">
+              Back
+          </Button>
+        </Link>
       </div>
     )
   }

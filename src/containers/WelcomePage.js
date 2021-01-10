@@ -1,13 +1,9 @@
 import { Component } from "react";
 import emoji2 from '../images/emoji2.png';
 import Button from 'react-bootstrap/Button'
-
+import { Link } from 'react-router-dom'
 
 export class WelcomePage extends Component {
-  buttonClicked () {
-    window.location="generator"
-  }
-
   render() {
     return (
       <div className="WelcomePage">
@@ -16,12 +12,12 @@ export class WelcomePage extends Component {
         </h1>
         <img src={emoji2} className="Welcome-emoji" alt="emoji2" />
         <br/>
-        <Button 
-          className="makeButton"
-          onClick={this.buttonClicked}
-          variant="outline-primary">
-            Generate
-        </Button>
+        <Link to='/generator'>
+          <Button 
+            className="makeButton">
+              Generate
+          </Button>
+        </Link>
         <br/>
         <div className="Welcome-quote">"Do you think God stays in heaven because he, too, lives in fear of what he's created here on earth?" - Spy Kids 2.</div>
       </div>
