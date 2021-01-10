@@ -15,10 +15,16 @@ export class Face extends Component {
       index: index,
     }
     window.faceChange = this.faceChange.bind(this)
+    window.randFaceChange = this.randFaceChange.bind(this)
   }
 
   faceChange() {
     index = (index + 1) % (faces.length)
+    this.setState ({ index: index })
+  }
+
+  randFaceChange() {
+    index = Math.floor(Math.random() * (faces.length - 0));
     this.setState ({ index: index })
   }
 

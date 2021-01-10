@@ -14,10 +14,16 @@ export class Decorations extends Component {
       index: index,
     }
     window.decorationsChange = this.decorationsChange.bind(this)
+    window.randDecorationsChange = this.randDecorationsChange.bind(this)
   }
 
   decorationsChange() {
     index = (index + 1) % (decorations.length)
+    this.setState ({ index: index })
+  }
+
+  randDecorationsChange() {
+    index = Math.floor(Math.random() * (decorations.length - 0));
     this.setState ({ index: index })
   }
 

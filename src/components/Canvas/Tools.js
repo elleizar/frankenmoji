@@ -2,6 +2,12 @@ import { Component } from "react";
 import Button from "react-bootstrap/Button";
 
 export class Tools extends Component {
+  randomClicked() {
+    window.randEyesChange();
+    window.randMouthChange();
+    window.randFaceChange();
+    window.randDecorationsChange();
+  }
 
   render() {
     return (
@@ -37,9 +43,9 @@ export class Tools extends Component {
 
         <Button
           className="random-button"
-          onClick={() => console.log("random button clicked")}
+          onClick={this.randomClicked}
         >
-          Random
+          Randomize
         </Button>
       </div>
     )

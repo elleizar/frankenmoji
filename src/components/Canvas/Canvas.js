@@ -10,7 +10,7 @@ export class Canvas extends Component {
     return (
       <div className="Canvas">
         <header>Canvas</header>
-        {/* <Decorations/> */}
+        <Decorations/>
         <Eyes/>
         <Mouth/>
         <Face/>
