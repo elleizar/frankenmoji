@@ -9,19 +9,24 @@ const faces = [plain, blush, angry, fearful];
 var index = 0;
   
 export class Face extends Component {
-   render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: index,
+    }
+    window.faceChange = this.faceChange.bind(this)
+  }
+
+  faceChange() {
+    index = (index + 1) % (faces.length)
+    this.setState ({ index: index })
+  }
+
+  render() {
     return (
       <div className="face">
-           <img src={faces[index]} alt=""/>
+           <img src={faces[this.state.index]} alt=""/>
         </div>
      )
    }
  }
-
- const faceChange = function() {
-  console.log("before: " + index)
-  index = (index + 1) % (faces.length)
-  console.log(" after: " + index)
- }
-
- export {faceChange};

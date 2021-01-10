@@ -1,11 +1,6 @@
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
 
-import { Eyes } from "./Eyes";
-import { mouthChange } from "./Mouth";
-import { faceChange } from "./Face";
-import { decorationsChange } from "./Decorations";
-
 export class Tools extends Component {
 
   render() {
@@ -13,22 +8,21 @@ export class Tools extends Component {
       <div className="Tools">
         <Button
           className="eye-button"
-          onClick={Eyes.eyesChange}
+          onClick={window.eyesChange}
         >
           Eye
         </Button>
 
         <Button
           className="mouth-button"
-          // onClick={() => console.log("mouth button clicked")}
-          onClick={mouthChange}
+          onClick={window.mouthChange}
         >
           Mouth
         </Button>
 
         <Button
           className="face-button"
-          onClick={faceChange}
+          onClick={window.faceChange}
         >
           Face
         </Button>
@@ -36,7 +30,7 @@ export class Tools extends Component {
         <Button
           className="decorations-button"
           // onClick={() => console.log("decoration button clicked")}
-          onClick={decorationsChange}
+          onClick={window.decorationsChange}
         >
           Decoration
         </Button>

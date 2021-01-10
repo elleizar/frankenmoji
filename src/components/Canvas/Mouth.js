@@ -11,19 +11,24 @@ const mouths = [moneytongue, biggrintongue, drool, frown, kiss];
 var index = 0;
 
 export class Mouth extends Component {
-   render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: index,
+    }
+    window.mouthChange = this.mouthChange.bind(this)
+  }
+
+  mouthChange() {
+    index = (index + 1) % (mouths.length)
+    this.setState ({ index: index })
+  }
+
+  render() {
     return (
       <div className="mouth">
-           <img src={mouths[index]} alt=""/>
+           <img src={mouths[this.state.index]} alt=""/>
        </div>
      )
    }
  }
-
-const mouthChange = function() {
-  console.log("before: " + index)
-  index = (index + 1) % (mouths.length)
-  console.log(" after: " + index)
- }
-
- export {mouthChange};

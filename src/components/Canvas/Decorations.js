@@ -8,19 +8,24 @@ const decorations = [cowboy, halo, hearts];
 var index = 0;
 
 export class Decorations extends Component {
-   render() {
+  constructor(props) {
+    super(props);
+    this.state = {
+      index: index,
+    }
+    window.decorationsChange = this.decorationsChange.bind(this)
+  }
+
+  decorationsChange() {
+    index = (index + 1) % (decorations.length)
+    this.setState ({ index: index })
+  }
+
+  render() {
     return (
       <div className="decorations">
-           <img src={decorations[index]} alt=""/>
+           <img src={decorations[this.state.index]} alt=""/>
        </div>
      )
    }
  }
-
-const decorationsChange = function() {
-  console.log("before: " + index)
-  index = (index + 1) % (decorations.length)
-  console.log(" after: " + index)
- }
-
- export {decorationsChange};

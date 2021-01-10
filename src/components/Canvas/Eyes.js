@@ -14,24 +14,20 @@ const eyes = [angry, closed, crossed, crying, expressionless, flushed, heart];
 var index = 0;
 
 export class Eyes extends Component {
-
   constructor(props) {
     super(props);
     this.state = {
       index: index,
     }
-    // this.eyesChange = this.eyesChange.bind(this)
+    window.eyesChange = this.eyesChange.bind(this)
   }
 
-  static eyesChange() {
-    console.log("before: " + index)
+  eyesChange() {
     index = (index + 1) % (eyes.length);
-    console.log(" after: " + index)
-    this.setState = ({ index: index })
-   }
+    this.setState ({ index: index })
+  }
 
   render() {
-    console.log("index eye: " + this.state.index)
     return (
       <div className="eye">
           <img src={eyes[this.state.index]} alt=""/>
@@ -39,12 +35,3 @@ export class Eyes extends Component {
     )
   }
 }
-
-// const eyesChange = function() {
-//     console.log("before: " + index)
-//     index = (index + 1) % (eyes.length);
-//     console.log(" after: " + index)
-//     return index;
-//    }
-  
-// export {eyesChange};
