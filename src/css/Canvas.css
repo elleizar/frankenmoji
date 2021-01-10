@@ -1,8 +1,8 @@
 .Canvas {
     background-color: white;
     border-radius: 25px;
-    width: 400px;
-    height: 300px;
+    width: 330px;
+    height: 280px;
     position: relative;
     display: flex;
     align-items: center;
@@ -31,8 +31,16 @@
 
 /* Tools */
 .eye-button, .mouth-button, .face-button, .decorations-button, .random-button {
+    font-family: "Nunito", "Monospace";
     width: 110px;
     height: 45px;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
+    border-radius: 15px;
 }
+
+.eye-button:hover, .mouth-button:hover, .face-button:hover, .decorations-button:hover, .random-button:hover {
+    background-color: #ffe6e6;
+    border-color: #ff8080;
+  }

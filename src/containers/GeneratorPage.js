@@ -11,13 +11,12 @@ export class GeneratorPage extends Component {
   render() {
     return (
       <div className="GeneratorPage">
-        <h4 className="Generator-inst">
+        <h1 className="Generator-inst">
           Click on the buttons below to change your frankenmoji!
-        </h4>
+        </h1>
         <Canvas/>
         <br/>
         <Tools/>
-        <br/>
         <br/>
         <Button 
           className="backButton"

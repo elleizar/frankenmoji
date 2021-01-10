@@ -11,12 +11,10 @@ export class WelcomePage extends Component {
   render() {
     return (
       <div className="WelcomePage">
-        <h2 className="Welcome-header">
+        <h1 className="Welcome-header">
           frankenmoji
-        </h2>
-        <br/>
+        </h1>
         <img src={emoji2} className="Welcome-emoji" alt="emoji2" />
-        <br/>
         <br/>
         <Button 
           className="makeButton"
@@ -25,7 +23,7 @@ export class WelcomePage extends Component {
             Generate
         </Button>
         <br/>
-        <div className="Welcome-quote">"Do you think God stays in heaven because he, too, lives in fear of what he's created here on earth?" - Robert Rodriguez, writer of Spy Kids 2.</div>
+        <div className="Welcome-quote">"Do you think God stays in heaven because he, too, lives in fear of what he's created here on earth?" - Spy Kids 2.</div>
       </div>
       
     );

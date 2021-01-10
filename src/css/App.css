@@ -1,19 +1,42 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito/Nunito-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito/Nunito-Bold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Nunito';
+  src: url('../fonts/Nunito/Nunito-Italic.ttf');
+  font-weight: italic;
+}
+
 /* Welcome Page */
 .WelcomePage {
-  background-color: #495059;
+  background-color: #b8e0b8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: black;
   text-align: center;
+  font-family: "Nunito", "Monospace";
 }
 
 .Welcome-emoji {
-  height: 40vmin;
+  height: 35vmin;
   pointer-events: none;
+}
+
+.Welcome-header {
+  font-size: 55px;
+  font-weight: bold;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -30,22 +53,50 @@
     transform: rotate(360deg);
   }
 }
-.makeButton {
-  width: 200px;
-  height: 80px;
-  font-size: 30px;
-  font-weight: bold;
-}
-.Welcome-quote {
-  font-family: "Monospace";
-  font-size: 15px;
-  width: 500px;
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 
+.makeButton {
+  animation: fadeIn;
+  animation-duration: 1s;
+  width: 200px;
+  height: 70px;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: "Nunito", "Monospace";
+  border-color: #2d862d;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.makeButton:hover {
+  background-color: #ffeb99;
+  border-color: #e6b800;
+}
+
+.Welcome-quote {
+  animation: fadeIn;
+  animation-duration: 3s;
+  font-family: "Nunito", "Monospace";
+  font-size: 16px;
+  width: 35%;
+  font-style: italic;
+}
 
 /* Generator page */
 .GeneratorPage {
-  background-color: #c5eddc;
+  font-family: "Nunito", "Monospace";
+  background-color: #b8e0b8;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -56,9 +107,23 @@
   text-align: center;
 }
 
+.Generator-inst {
+  font-size: 30px;
+}
+
 .backButton {
-  width: 90px;
-  height: 45px;
+  font-family: "Nunito", "Monospace";
+  width: 200px;
+  height: 50px;
   font-size: 15px;
   font-weight: bold;
+  cursor:pointer;
+  border-color: #2d862d;
+  border-radius: 15px;
+  cursor:pointer;
+}
+
+.backButton:hover {
+  background-color: #ffeb99;
+  border-color: #e6b800;
 }
