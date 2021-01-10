@@ -1,7 +1,7 @@
 import { Component } from "react";
 import Button from "react-bootstrap/Button";
 
-import { eyesChange } from "./Eyes";
+import { Eyes } from "./Eyes";
 import { mouthChange } from "./Mouth";
 import { faceChange } from "./Face";
 import { decorationsChange } from "./Decorations";
@@ -13,7 +13,7 @@ export class Tools extends Component {
       <div className="Tools">
         <Button
           className="eye-button"
-          onClick={eyesChange}
+          onClick={Eyes.eyesChange}
         >
           Eye
         </Button>
