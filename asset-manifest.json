@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/shacks/static/css/main.69771ebc.chunk.css",
+    "main.js": "/shacks/static/js/main.51d7508f.chunk.js",
+    "main.js.map": "/shacks/static/js/main.51d7508f.chunk.js.map",
+    "runtime-main.js": "/shacks/static/js/runtime-main.4c8a614d.js",
+    "runtime-main.js.map": "/shacks/static/js/runtime-main.4c8a614d.js.map",
+    "static/js/2.58617ecb.chunk.js": "/shacks/static/js/2.58617ecb.chunk.js",
+    "static/js/2.58617ecb.chunk.js.map": "/shacks/static/js/2.58617ecb.chunk.js.map",
+    "static/js/3.fdb049ee.chunk.js": "/shacks/static/js/3.fdb049ee.chunk.js",
+    "static/js/3.fdb049ee.chunk.js.map": "/shacks/static/js/3.fdb049ee.chunk.js.map",
+    "index.html": "/shacks/index.html",
+    "static/css/main.69771ebc.chunk.css.map": "/shacks/static/css/main.69771ebc.chunk.css.map",
+    "static/js/2.58617ecb.chunk.js.LICENSE.txt": "/shacks/static/js/2.58617ecb.chunk.js.LICENSE.txt",
+    "static/media/clown.4daa8c48.png": "/shacks/static/media/clown.4daa8c48.png",
+    "static/media/devil.0456f9bf.png": "/shacks/static/media/devil.0456f9bf.png",
+    "static/media/emoji2.9d8eeab4.png": "/shacks/static/media/emoji2.9d8eeab4.png",
+    "static/media/face_angry.0956e06a.png": "/shacks/static/media/face_angry.0956e06a.png",
+    "static/media/face_blush.a189fbcc.png": "/shacks/static/media/face_blush.a189fbcc.png",
+    "static/media/face_plain.fa35def2.png": "/shacks/static/media/face_plain.fa35def2.png",
+    "static/media/fearful_face.49c5091d.png": "/shacks/static/media/fearful_face.49c5091d.png",
+    "static/media/stars.ad29d251.png": "/shacks/static/media/stars.ad29d251.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.4c8a614d.js",
+    "static/js/2.58617ecb.chunk.js",
+    "static/css/main.69771ebc.chunk.css",
+    "static/js/main.51d7508f.chunk.js"
+  ]
+}
