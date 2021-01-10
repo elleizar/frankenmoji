@@ -3,8 +3,10 @@ import plain from '../../images/faces/face_plain.png';
 import blush from '../../images/faces/face_blush.png';
 import angry from '../../images/faces/face_angry.png';
 import fearful from '../../images/faces/fearful_face.png';
+import clown from '../../images/faces/clown.png';
+import devil from '../../images/faces/devil.png';
 
-const faces = [plain, blush, angry, fearful];
+const faces = [plain, blush, angry, fearful, clown, devil];
 
 var index = 0;
   
