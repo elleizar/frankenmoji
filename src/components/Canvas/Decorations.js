@@ -24,6 +24,7 @@ export class Decorations extends Component {
     }
     window.decorationsChange = this.decorationsChange.bind(this)
     window.randDecorationsChange = this.randDecorationsChange.bind(this)
+    window.getDecorations = this.getDecorations.bind(this)
   }
 
   decorationsChange() {
@@ -34,6 +35,12 @@ export class Decorations extends Component {
   randDecorationsChange() {
     index = Math.floor(Math.random() * (decorations.length - 0));
     this.setState ({ index: index })
+  }
+
+  getDecorations() {
+    var image = new Image();
+    image.src = decorations[this.state.index];
+    return image;
   }
 
   render() {

@@ -18,6 +18,7 @@ export class Face extends Component {
     }
     window.faceChange = this.faceChange.bind(this)
     window.randFaceChange = this.randFaceChange.bind(this)
+    window.getFace = this.getFace.bind(this)
   }
 
   faceChange() {
@@ -28,6 +29,12 @@ export class Face extends Component {
   randFaceChange() {
     index = Math.floor(Math.random() * (faces.length - 0));
     this.setState ({ index: index })
+  }
+
+  getFace() {
+    var image = new Image();
+    image.src = faces[this.state.index];
+    return image;
   }
 
   render() {

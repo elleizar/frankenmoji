@@ -49,6 +49,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -58,9 +59,11 @@
   0% {
     opacity: 0;
   }
+
   30% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -76,7 +79,7 @@
   font-family: "Nunito", "Monospace";
   border-color: #2d862d;
   border-radius: 15px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .makeButton:hover {
@@ -111,19 +114,26 @@
   font-size: 30px;
 }
 
-.backButton {
+.backButton,
+.saveButton {
   font-family: "Nunito", "Monospace";
   width: 200px;
   height: 50px;
   font-size: 15px;
   font-weight: bold;
-  cursor:pointer;
+  cursor: pointer;
   border-color: #2d862d;
   border-radius: 15px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
-.backButton:hover {
+.backButton:hover,
+.saveButton:hover {
   background-color: #ffeb99;
   border-color: #e6b800;
+}
+
+.tip {
+  margin-top: 10px;
+  font-size: 18px;
 }

@@ -1,46 +1,59 @@
 .Canvas {
-    background-color: white;
-    border-radius: 25px;
-    width: 330px;
-    height: 280px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: white;
+  border-radius: 25px;
+  width: 330px;
+  height: 280px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.eye, .mouth, .face, .decorations {
-    position: absolute;
+.eye,
+.mouth,
+.face,
+.decorations {
+  position: absolute;
 }
 
 .eye {
-    z-index: 2;
+  z-index: 2;
 }
 
 .mouth {
-    z-index: 1;
+  z-index: 1;
 }
 
 .face {
-    z-index: 0;
+  z-index: 0;
 }
 
 .decorations {
-    z-index: 3;
+  z-index: 3;
 }
 
 /* Tools */
-.eye-button, .mouth-button, .face-button, .decorations-button, .random-button {
-    font-family: "Nunito", "Monospace";
-    width: 110px;
-    height: 45px;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 15px;
+.eye-button,
+.mouth-button,
+.face-button,
+.decorations-button,
+.random-button,
+.save-button {
+  font-family: "Nunito", "Monospace";
+  width: 110px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 15px;
 }
 
-.eye-button:hover, .mouth-button:hover, .face-button:hover, .decorations-button:hover, .random-button:hover {
-    background-color: #ffe6e6;
-    border-color: #ff8080;
-  }
+.eye-button:hover,
+.mouth-button:hover,
+.face-button:hover,
+.decorations-button:hover,
+.random-button:hover,
+.random-button:hover {
+  background-color: #ffe6e6;
+  border-color: #ff8080;
+}

@@ -36,6 +36,7 @@ export class Eyes extends Component {
     }
     window.eyesChange = this.eyesChange.bind(this)
     window.randEyesChange = this.randEyesChange.bind(this)
+    window.getEyes = this.getEyes.bind(this)
   }
 
   eyesChange() {
@@ -46,6 +47,12 @@ export class Eyes extends Component {
   randEyesChange() {
     index = Math.floor(Math.random() * (eyes.length - 0));
     this.setState ({ index: index })
+  }
+
+  getEyes() {
+    var image = new Image();
+    image.src = eyes[this.state.index];
+    return image;
   }
 
   render() {

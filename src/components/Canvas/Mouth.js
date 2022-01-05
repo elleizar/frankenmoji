@@ -44,6 +44,7 @@ export class Mouth extends Component {
     }
     window.mouthChange = this.mouthChange.bind(this)
     window.randMouthChange = this.randMouthChange.bind(this)
+    window.getMouth = this.getMouth.bind(this)
   }
 
   mouthChange() {
@@ -54,6 +55,12 @@ export class Mouth extends Component {
   randMouthChange() {
     index = Math.floor(Math.random() * (mouths.length - 0));
     this.setState ({ index: index })
+  }
+
+  getMouth() {
+    var image = new Image();
+    image.src = mouths[this.state.index];
+    return image;
   }
 
   render() {
