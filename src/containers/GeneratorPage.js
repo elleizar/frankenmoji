@@ -11,40 +11,42 @@ export class GeneratorPage extends Component {
     canvas.height = 200;
 
     var ctx = canvas.getContext('2d');
+    var face, mouth, eyes, decorations;
 
-    // get images
-    var face = window.getFace();
-    var mouth = window.getMouth();
-    var eyes = window.getEyes();
-    var decorations = window.getDecorations();
+    setTimeout(function () {
+      // get images
+      face = window.getFace();
+      mouth = window.getMouth();
+      eyes = window.getEyes();
+      decorations = window.getDecorations();
 
-    // clear canvas
-    ctx.clearRect(0, 0, canvas.width, canvas.height);
+      // clear canvas
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }, 0);
 
     // draw image
     setTimeout(function () {
       ctx.drawImage(face, canvas.width / 2 - face.width / 2, canvas.height / 2 - face.height / 2);
       ctx.drawImage(mouth, canvas.width / 2 - mouth.width / 2, canvas.height / 2 - mouth.height / 2);
       ctx.drawImage(eyes, canvas.width / 2 - eyes.width / 2, canvas.height / 2 - eyes.height / 2);
-      ctx.drawImage(decorations, canvas.width / 2 - decorations.width / 2, canvas.height / 2 -decorations.height / 2);
-    }, 5);
+      ctx.drawImage(decorations, canvas.width / 2 - decorations.width / 2, canvas.height / 2 - decorations.height / 2);
+    }, 50);
 
     // open image in new tab
     let w;
     setTimeout(function () {
       w = window.open('about:blank');
-    }, 10);
+    }, 20);
 
     var image = new Image();
     setTimeout(function () {
       image.src = canvas.toDataURL("image/png");
-    }, 10);
+    }, 100);
     setTimeout(function () {
       w.document.write(image.outerHTML);
-    }, 15);
-
-    console.log(canvas.toDataURL("image/png"));
+    }, 150);
   }
+
   render() {
     return (
       <div className="GeneratorPage">

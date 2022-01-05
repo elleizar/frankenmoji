@@ -127,10 +127,14 @@
   cursor: pointer;
 }
 
-.backButton:hover,
-.saveButton:hover {
+.backButton:hover {
   background-color: #ffeb99;
   border-color: #e6b800;
+}
+
+.saveButton:hover {
+  background-color: #c1ccff;
+  border-color: #3b2fe9;
 }
 
 .tip {
