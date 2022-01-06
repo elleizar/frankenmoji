@@ -1,4 +1,5 @@
-This is the project we created for SheHacksV. 
+This is an updated project we created for SheHacksV. (Visit [here](https://github.com/elleizar/frankenmoji/tree/hackathon) for the hackathon branch)
+
 Devpost: https://devpost.com/software/frankenmoji
 
 ## Inspiration
@@ -16,7 +17,7 @@ _frankenmoji_ allows users to customize an emoji built from different emoji part
 ## How we built it
 We built _frankenmoji_ by starting out with the Create React App. From there, we separated the different parts of an emoji (eyes, mouth, face, accessories) using photo editors. We built it so that it loads a canvas when the user clicks on the generate button on the main page, and provided buttons for users to click to customize their frankenmoji. While buttons for changing specific emoji components go through different parts one by one, the 'randomize' button will select a random combination of parts, creating the ultimate frankenmoji.
 
-We hosted our website using domain.com, with help using surge.sh. This could be found on http://frankenmoji.online/
+We hosted our website using domain.com, with help using surge.sh. (This domain has been expired.)
 
 ## Challenges we ran into
 This is the first React App that we have all collectively made together. With our limited React knowledge (and web dev abilities) we ran into troubles with calling functions across files. We also had never deployed a website before, so we had some trouble hosting our site using domain.com.
@@ -27,8 +28,11 @@ We have created a frankenmonster that we never knew we needed. To quote: _It's a
 ## What we learned
 When working on a project, it's important to have an idea that everybody is on board with. We really had fun working together to make this idea come to life. We also all learned more about React, and also how to deploy a website!
 
+## New updates!
+- Added a save button for users to save their frankenmoji forever
+- _frankenmoji_ is now deployed using heroku: https://frankenmoji.herokuapp.com/
+
 ## What's next for frankenmoji
-- Adding a save button for users to save their frankenmoji forever
 - Making the design a bit prettier
 - Adding more emoji parts for more variety 
 
